@@ -3,7 +3,9 @@ footer {
     width: 100%;
     height: 200px;
     background-color: #dddddd;
-    border-top: solid 1px;
+    border-top: solid 0;
+    , box-sizing: border-box;
+    float: left;
 }
 
 footer>div {
@@ -21,9 +23,9 @@ footer>div>nav {
     float: left;
     padding: 15px;
     box-sizing: border-box;
-} 
-footer  a, 
-footer div {
+}
+
+footer a, footer div {
     color: red;
     display: block;
     line-height: 40PX;
@@ -31,6 +33,7 @@ footer div {
     font-size: 14px;
     line-height: 2em;
 }
+
 footer a:hover {
     text-decoration: underline;
     color: blueviolet;
