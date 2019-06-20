@@ -44,7 +44,7 @@ section.produtos .cartao {
     background-position: center center;
 }
 
-section.produtos .cartao > .controles {
+section.produtos .cartao>.controles {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -52,8 +52,57 @@ section.produtos .cartao > .controles {
     opacity: 0;
     transition: linear all 500ms;
     cursor: pointer;
-
+    overflow: hidden;
 }
-section.produtos .cartao > .controles:hover{
+
+section.produtos .cartao >.controles:hover {
     opacity: 1;
+}
+
+section.produtos .coracao {
+    color: #ffffff;
+    position: absolute;
+    font-size: 12px;
+    left: -20px;
+    top: 18px;
+    opacity: 0.3;
+    transition-duration: 500ms;
+    transform: scale(0.3);
+}
+
+.cartao > .controles:hover > .coracao {
+    left: 20px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.controles > .tamanhos  {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: calc(50% - 50px);
+    bottom: 80px;
+}
+
+.controles > .tamanhos > div {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    transition-duration: 200ms; 
+}
+
+.controles > .tamanhos > div:nth-child(1), 
+.controles > .tamanhos > div:nth-child(2) {
+    margin-right: 5px;
+}
+
+.controles > .tamanhos > div:hover {
+    transform: rotate(45deg);
+    background-color: #e1bee7;
 }
